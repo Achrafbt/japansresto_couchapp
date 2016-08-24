@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movies</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <link rel='stylesheet' href='style/bootstrap.min.css' type='text/css'>
+  </head>
+  <body>
+  <div class='well'>
+			<div class="dropdown">
+			<select class="form-control" id='recipe'>
+			    <option value="Sushi">Sushi</option>
+			    <option value="Sashimi">Sashimi</option>
+			    <option value="Shabushabu">Shabu shabu</option>
+			    <option value="Sukiyaki">Sukiyaki</option>
+			    <option value="Nikujaga">Nikujaga</option>
+			    <option value="Tonkatsu">Tonkatsu</option>
+			</select>
+			</div>
+		<div id='content'>
+			<input type='text' id='hoeveelheid' placeholder='hoeveelheid' />
+			<input type='text' id='tafelnummer' placeholder='tafelnummer' />
+			<input type='text' id='opmerkingen' placeholder='opmerkingen' />
+			<input type='text' id='datum' placeholder='datum en uur' />		
+		</div>
+			<button onclick='createDoc()'> Ok </button>
+			<button onclick='buildOutput()'>Show reservations</button>
+  </div>
+  </body>
+  	<script src='scripts/jquery.js'></script>
+    <script src='scripts/main.js'></script>
+ </html>
